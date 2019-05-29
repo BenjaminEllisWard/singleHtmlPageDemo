@@ -1,0 +1,41 @@
+<input type=textbox id=leftOperandValue placeholder="type first value"></input>
+<select id=operation>
+	<option value="addition">+</option>
+	<option value="subtraction">-</option>
+	<option value="multiplication">*</option>
+	<option value="division">/</option>
+</select>
+<input type=textbox id=rightOperandValue placeholder="type second value"></input>
+<button id=goBtn onclick="Calculate()">Calculate</button>
+</br>
+</br>
+<label>Result: </label>
+<input type=textbox id=resultValue placeholder="Result value"></input>
+
+<script>
+	function Calculate() {
+		var leftValue = parseInt(document.getElementById("leftOperandValue").value);
+		var rightValue = parseInt(document.getElementById("rightOperandValue").value);
+		var operator = document.getElementById("operation").value;
+		var result
+		
+		switch(operator) {
+			case "addition":
+				result = leftValue + rightValue;
+				break;
+			case "subtraction":
+				result = leftValue - rightValue;
+				break;
+			case "multiplication":
+				result = leftValue * rightValue;
+				break;
+			case "division":
+				result = leftValue / rightValue;
+				break;
+			default:
+				alert("Something went wrong.");
+		}
+		
+		document.getElementById("resultValue").value = result;
+	}
+</script>
