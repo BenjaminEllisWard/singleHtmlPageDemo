@@ -1,9 +1,5 @@
-# singleHtmlPageDemo
-Showing a friend how a single file can be used by a browser to render a page.
+## singleHtmlPageDemo
 
-
-
-### Demo
 Here's a little something I put together to show how front-end code is used in web applications. Follow these steps:
 
 - **Right click on your desktop background and select New>Text Document.** </br>
